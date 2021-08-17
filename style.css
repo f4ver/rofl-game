@@ -1,0 +1,53 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+#man {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/man.png);
+    background-size: 60px 60px;
+    position: relative;
+    top: 145px;
+}
+#obs {
+    width: 20px;
+    height: 30px;
+    background-image: url(img/obstacle.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: obsMov 1.5s infinite linear;
+}
+@keyframes obsMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+.jump {
+    animation: jump 0.3s  linear;
+}
+@keyframes jump {
+    0% {
+    top: 145px;
+    }
+    30% {
+    top: 100px;
+    }
+    50% {
+    top: 80px;
+    }
+    80% {
+    top: 120px;
+    }
+    100% {
+    top: 145px;
+    }
+    }
+     
